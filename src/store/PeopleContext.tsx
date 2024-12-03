@@ -49,7 +49,7 @@ export const usePeople = () => {
   const context = useContext(PeopleContext);
 
   if (!context) {
-    throw new Error('useTPeopleContext must be used within a PeopleProvider');
+    throw new Error('usePeopleContext must be used within a PeopleProvider');
   }
 
   return context;

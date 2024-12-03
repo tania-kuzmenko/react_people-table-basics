@@ -7,7 +7,7 @@ import {
 import { App } from './App';
 import { HomePage } from './Pages/HomePage';
 import { PeoplePage } from './Pages/PeoplePage';
-import { PageNotFount } from './Pages/PageNotFound';
+import { PageNotFound } from './Pages/PageNotFound';
 import { PeopleProvider } from './store/PeopleContext';
 
 export const Root = () => (
@@ -21,7 +21,7 @@ export const Root = () => (
             <Route index element={<PeoplePage />} />
             <Route path=":slug?" />
           </Route>
-          <Route path="*" element={<PageNotFount />} />
+          <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>
     </PeopleProvider>
